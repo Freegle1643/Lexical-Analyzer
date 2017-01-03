@@ -1,30 +1,31 @@
-def fact(x):
-  if x@ == -1: 
-    return 1.i
-p = 'this is trick I love turds'
+# -*- coding: utf-8 -*-
+# sample program
+# 这是一个Python的简单猜数游戏的程序，我们用来作为测试程序
+import random
 
- elif x ==0: # nor shall this
-    return 1
-   else:
-    return x* fact(x - 1)
- k = 3; 
- s = 'foo\n\'\"'
- k = "another"
+guesses_made = 0
 
-g9 = "noe"
+name = raw_input('Hello! What is your name?\n')
 
-fact(20)
+number = random.randint(1, 20)
+print 'Well, {0}, I am thinking of a number between 1 and 20.'.format(name)
 
-s = "foo\n\'\""
+while guesses_made < 6:
 
-fact(20)
-# this shall not exist
-asdf = 'turds'
+    guess = int(raw_input('Take a guess: '))
 
-p = 'this is a fart'
+    guesses_made += 1
 
-lerg = "why the ?"
+    if guess < number:
+        print 'Your guess is too low.'
 
-zed = 'fergie'
+    if guess > number:
+        print 'Your guess is too high.'
 
-bigfart = 12
+    if guess == number:
+        break
+
+if guess == number:
+    print 'Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made)
+else:
+    print 'Nope. The number I was thinking of was {0}'.format(number)

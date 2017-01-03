@@ -9,7 +9,7 @@ from ID import is_ID
 
 
 # 定义需要打开分析的程序文件
-workfile = raw_input()
+workfile = raw_input("Enter Python file (.py) fullname: ")
 
 # 对于打开文件异常的处理
 try:
