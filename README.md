@@ -13,7 +13,7 @@ If you want to modify the project and transform it to lexical analysis for other
 1. Change `keywords.py` (or `ID.py` and `punct.py` if necessary)to the language you want accordingly.
 2. Add more Python file to manipulate keywords, punctuation and so on. Then you will need to add some codes in `analyze.py` so that it knows which files to use.
 ### Change details
-You need to change the following code segments.
+You may need to change the following code segments for lexical analysis on other languages.
 
 `keywords.py`
 ```Python
